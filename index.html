@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ASFA Foundation - Empowering vulnerable communities through sustainable education, healthcare, and shelter initiatives in Africa">
+  <title>ASFA Foundation | Empowering Communities</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css?v=1.0.1">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  
+  <!-- Internal CSS as fallback -->
+  <style>
+    :root {
+      --gold: #FFD700;
+      --dark-blue: #003366;
+    }
+    .bg-dark-blue { background-color: var(--dark-blue); }
+    .btn-gold { background-color: var(--gold); color: #000; }
+    .text-gold { color: var(--gold); }
+    .floating-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" aria-label="ASFA Foundation Home">
+        <div class="logo-circle">
+          <img src="./images/logo.png" alt="ASFA Logo" width="40" height="40" loading="eager">
+        </div>
+        <span class="site-name">Arm Stretch Foundation Africa Ltd</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-gold" href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/hero1.jpeg" class="d-block w-100" alt="Community empowerment" loading="eager">
+        <div class="carousel-caption">
+          <h1>Empowering Vulnerable Communities</h1>
+          <a href="donate.html" class="btn btn-gold btn-lg mt-3">Donate Now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/hero2.jpeg" class="d-block w-100" alt="Education program" loading="lazy">
+        <div class="carousel-caption">
+          <h1>Transforming Lives Through Education</h1>
+          <a href="programs.html" class="btn btn-gold btn-lg mt-3">Our Programs</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Quick Links Section -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Explore Our Work</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-5 mb-4">
+          <div class="p-4 h-100 border rounded bg-white">
+            <i class="fas fa-images fa-3x text-gold mb-3"></i>
+            <h3>Our Gallery</h3>
+            <p>See the impact we're making in communities</p>
+            <a href="gallery.html" class="btn btn-gold">View Gallery</a>
+          </div>
+        </div>
+        <div class="col-md-5 mb-4">
+          <div class="p-4 h-100 border rounded bg-white">
+            <i class="fas fa-users fa-3x text-gold mb-3"></i>
+            <h3>Our Team</h3>
+            <p>Meet the people behind our foundation</p>
+            <a href="team.html" class="btn btn-outline-gold">Meet The Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-3">Our Mission</h2>
+      <p class="lead mb-4">To empower vulnerable communities through sustainable education, healthcare, and shelter initiatives.</p>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-3">
+          <div class="p-3">
+            <h3 class="text-gold">1,000+</h3>
+            <p>Lives Impacted</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="p-3">
+            <h3 class="text-gold">50+</h3>
+            <p>Communities Served</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="p-3">
+            <h3 class="text-gold">3+</h3>
+            <p>Years of Service</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Programs</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-book-open fa-3x text-gold mb-3"></i>
+              <h3>Education</h3>
+              <p>Scholarships and learning materials for underserved children</p>
+              <a href="programs.html" class="btn btn-outline-gold">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-heartbeat fa-3x text-gold mb-3"></i>
+              <h3>Healthcare</h3>
+              <p>Mobile clinics and medical services for rural areas</p>
+              <a href="programs.html" class="btn btn-outline-gold">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-home fa-3x text-gold mb-3"></i>
+              <h3>Shelter</h3>
+              <p>Emergency housing for families in crisis</p>
+              <a href="programs.html" class="btn btn-outline-gold">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark-blue text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5>About ASFA</h5>
+          <p>Empowering communities through sustainable initiatives.</p>
+          <div class="social-links mt-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white">About</a></li>
+            <li class="mb-2"><a href="programs.html" class="text-white">Programs</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Contact Us</h5>
+          <address>
+            Kasubi, Kampala, Uganda<br>
+            +256 745 993474<br>
+            asfafoundationltd@gmail.com
+          </address>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h5>Newsletter</h5>
+          <form class="newsletter-form">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+              <button class="btn btn-gold" type="submit">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="my-4 bg-light">
+      <div class="text-center">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> ASFA Foundation. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script>
+    // Simple script to handle newsletter form
+    document.querySelector('.newsletter-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = this.querySelector('input').value;
+      alert('Thank you for subscribing! We will keep you updated.');
+      this.reset();
+    });
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
